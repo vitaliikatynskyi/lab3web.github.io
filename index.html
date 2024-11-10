@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa; /* Світло-блакитний фон */
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #e0f7fa;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+            padding: 8px 16px;
+            background-color: #00796b;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        nav a:hover {
+            background-color: #004d40;
+        }
+        .container {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 800px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        p {
+            text-align: left;
+            margin: 10px 0;
+            color: #555;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        .weather-icon {
+            width: 30px;
+            height: 30px;
+        }
+        .footer-text {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#home">Головна</a>
+        <a href="#weather">Погода</a>
+    </nav>
+    <div class="container">
+        <div id="home">
+            <h1>Лабораторна робота №3</h1>
+            <h2>Інформація про погоду</h2>
+            <p>Погода є важливим фактором, який впливає на наше повсякденне життя. В Україні клімат дуже різноманітний, з холодними зимами та теплими літами. У світі також спостерігається велика варіативність погодних умов - від тропічних лісів до пустель, від холодних Арктичних областей до жарких екваторіальних регіонів.</p>
+            <p>Знання про погоду допомагає нам планувати наші повсякденні справи, подорожі, сільськогосподарські роботи та багато іншого. Сучасні технології дозволяють точно передбачити погоду на кілька днів вперед, що значно полегшує наше життя.</p>
+            <img src="https://c02.purpledshub.com/uploads/sites/77/2024/07/1ef43687-6738-6c42-a243-f743f52572fc.jpg" 
+        </div>
+        <div id="weather">
+            <h2>Прогноз погоди для Львова</h2>
+            <p>Таблиця нижче показує прогноз погоди для міста Львів на певні години. Дані включають температуру, атмосферний тиск, напрямок та швидкість вітру, а також вологість повітря.</p>
+            <table>
+                <tr>
+                    <th>Час</th>
+                    <th>Погода</th>
+                    <th>Т, °C</th>
+                    <th>Атм. тиск, мм рт. ст.</th>
+                    <th>Вітер, м/с</th>
+                    <th>Вологість, %</th>
+                </tr>
+                <tr>
+                    <td>6:00</td>
+                    <td><img src="https://i.pinimg.com/736x/c1/ad/a6/c1ada667a2996dee88d5b272cd6a24e3.jpg" alt="Сонце" class="weather-icon"></td>
+                    <td>+7</td>
+                    <td>725</td>
+                    <td>ПнС 3</td>
+                    <td>85</td>
+                </tr>
+                <tr>
+                    <td>9:00</td>
+                    <td><img src="https://stendzp.com/image/cache/catalog/originals/000731-1500x1500.jpg" alt="Хмари" class="weather-icon"></td>
+                    <td>+8</td>
+                    <td>727</td>
+                    <td>Пд 4</td>
+                    <td>78</td>
+                </tr>
+                <tr>
+                    <td>12:00</td>
+                    <td><img src="https://icons.iconarchive.com/icons/custom-icon-design/weather/256/Sunny-icon.png" alt="Сонце" class="weather-icon"></td>
+                    <td>+10</td>
+                    <td>728</td>
+                    <td>З 5</td>
+                    <td>70</td>
+                </tr>
+                <tr>
+                    <td>15:00</td>
+                    <td><img src="https://icons.iconarchive.com/icons/custom-icon-design/weather/256/Cloudy-icon.png" alt="Хмари" class="weather-icon"></td>
+                    <td>+9</td>
+                    <td>729</td>
+                    <td>Пн 3</td>
+                    <td>75</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
